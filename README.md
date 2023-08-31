@@ -27,3 +27,8 @@ Run the script: `python code_.py`.
 🚫 "Kira" is not responsible for any misuses of this code. 😉
 
 Enjoy the game and let fate decide your victory or demise! ☠️
+
+* still uder developement - features upcoming:
+- hints
+- larger array of words
+- Ryuk random comments in the terminal
