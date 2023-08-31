@@ -57,67 +57,67 @@ def hangman(word):
 def print_hangman(count):
     hangman_stages = [
         '''
-          ______
-         |/     |
-         |
-         |
-         |
-         |
-        _|_
+         ╭──────╮
+         ┊/     ┊
+         ┊
+         ┊
+         ┊
+         ┊
+        _┊_
         ''',
         '''
-          ______
-         |/     |
-         |      O
-         |
-         |
-         |
-        _|_
+         ╭──────╮
+         ┊/     ┊
+         ┊      O
+         ┊
+         ┊
+         ┊
+        _┊_
         ''',
         '''
-          ______
-         |/     |
-         |      O
-         |      |
-         |
-         |
-        _|_
+         ╭──────╮
+         ┊/     ┊
+         ┊      O
+         ┊      ┊ 
+         ┊
+         ┊
+        _┊_
         ''',
         '''
-          ______
-         |/     |
-         |      O
-         |     /|
-         |
-         |
-        _|_
+         ╭──────╮
+         ┊/     ┊
+         ┊      O
+         ┊     /┊ 
+         ┊
+         ┊
+        _┊_
         ''',
         '''
-          ______
-         |/     |
-         |      O
-         |     /|\\
-         |
-         |
-        _|_
+         ╭──────╮
+         ┊/     ┊ 
+         ┊      O
+         ┊     /┊\\
+         ┊
+         ┊
+        _┊_
         ''',
         '''
-          ______
-         |/     |
-         |      O
-         |     /|\\
-         |     /
-         |
-        _|_
+         ╭──────╮
+         ┊/     ┊ 
+         ┊      0
+         ┊     /┊\\
+         ┊     /
+         ┊
+        _┊_
         ''',
         '''
-          ______
-         |/     |
-         |      O
-         |     /|\\
-         |     / \\
-         |
-        _|_
+         ╭──────╮
+         ┊/     ┊ 
+         ┊      0
+         ┊     /┊\\
+         ┊     / \\
+         ┊
+        _┊_         ✝RIP꧂ 
         '''
     ]
     
@@ -125,16 +125,26 @@ def print_hangman(count):
 
 def play_hangman():
     print('Welcome to the Realm of Death, human.')
+    time.sleep(2)   # time.sleep function adds delay to a execution
     name = input('What shall I call you? ')
+    time.sleep(2)
     print(f'Greetings, {name}. Your fate awaits.')
-    time.sleep(1)
-    print('The game is about to begin...\nLet the guessing of fate commence.')
-    time.sleep(1)
+    time.sleep(2)  
+    print('The game is about to begin...')
+    time.sleep(2)  
+    print('Let the guessing of fate commence.')
+    time.sleep(2)
     os.system('cls' if os.name == 'nt' else 'clear')
 
     words_to_guess = [
-        'shinigami', 'note', 'apples', 'justice', 'realm', 'destiny',
-        'human', 'death', 'power', 'fate', 'light', 'ryuk', 'writing', 'l'
+    'shinigami', 'note', 'apples', 'justice', 'realm', 'destiny',
+    'human', 'death', 'power', 'fate', 'light', 'ryuk', 'writing', 'L',
+    'investigation', 'notebook', 'Kira', 'consequences', 'suspense', 'mind', 'rule',
+    'criminal', 'intelligence', 'plot', 'puzzle', 'penalty', 'game', 'mystery',
+    'prosecutor', 'law', 'control', 'secret', 'detective', 'strategy', 'enigma',
+    'chess', 'lawyer', 'code', 'judgment', 'elimination', 'cat-and-mouse', 'clue',
+    'misa', 'near', 'mello', 'soichiro', 'sayu', 'rem', 'teru', 'matsuda',
+    'aizawa', 'ide', 'mikami', 'mogi', 'ukita', 'naomi', 'raye', 'halle', 'watari'
     ]
     play = True
     while play:
@@ -143,6 +153,8 @@ def play_hangman():
         play = play_again()
 
     print('Farewell, mortal. Until we meet again.')
+    time.sleep(2)
+    print('visit the developers socials: ')
     exit()
 
 if __name__ == '__main__':
