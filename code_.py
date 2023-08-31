@@ -52,6 +52,28 @@ def hangman(word):
 
     if count == limit:
         print('Oh well, your fate is sealed. You lose.')
+        # Ryuk ascii art
+        print("""
+                ⠀⠀⠀⠀⠀⠀⠀⢀⣰⣸⣤⣆⡀⠀⠀⠀⠀⠀⠀⠀
+                ⠉⠀⠢⣭⣼⣶⣄⣼⣿⣿⣿⣿⡧⣀⣠⣀⣤⡀⠀⠀
+                ⠂⡩⢔⣿⣿⣿⡿⢿⣁⠙⢉⣿⣿⢿⣿⣿⣷⡦⢤⡀
+                ⠀⡰⡹⣿⣿⣿⣧⠘⢮⣉⣹⠋⠁⣾⣿⣿⣿⠦⡁⠊
+                ⠊⠐⢰⣾⡿⡏⠻⣷⣾⣭⣿⣴⣾⣿⣿⣿⣿⡕⠛⠄
+                ⠀⢀⣼⡿⠁⠀⠀⠀⢻⣿⣿⣿⡿⠁⠀⠀⠹⣿⣄⠀
+                ⠀⣼⣿⠁⠀⠀⠀⣤⣾⣿⣿⣿⣷⣄⠀⠀⠀⠻⣿⣆
+                ⠈⠿⣿⡄⠀⠀⣠⣭⣿⣿⣻⣿⣿⣿⡄⠀⠀⠀⣿⡟
+                ⠀⠀⣿⡇⢀⣾⣟⣿⣿⣿⣿⣿⣿⣿⣿⣀⠀⠀⣿⠃
+                ⠀⠀⢸⣧⠀⣿⣿⠟⡿⡿⢻⠿⣿⣿⣿⣿⡄⠀⣿⠀
+                ⠀⠀⢤⣿⣼⣿⠏⠀⠃⠁⠈⠀⠁⢻⣯⣏⠀⢸⣿⠀
+                ⠀⠀⢀⢋⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣤⣿⣿⠀
+                ⠀⠀⣾⣺⢻⣿⡄⠀⠀⠀⠀⠀⠀⠀⢰⣿⡏⢸⡿⡇
+                ⠀⠀⠈⠻⡾⢿⣧⠀⠀⠀⠀⠀⠀⠀⢸⣿⠁⣾⡾⠁
+                ⠀⠀⠀⠀⠀⠘⣿⡀⠀⠀⠀⠀⠀⠀⢸⡟⠀⠈⠀⠀
+                ⠀⠀⠀⠀⠀⠀⢻⣇⠀⠀⠀⠀⠀⠀⣼⡇⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⢀⣿⠃⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⢸⡟⠀⠀⠀⠀⠀⠀⠀⢸⣇⠀⠀⠀⠀
+                ⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀
+        """)
         print(f'The true word was: "{word}".')
 
 def print_hangman(count):
@@ -117,7 +139,7 @@ def print_hangman(count):
          ┊     /┊\\
          ┊     / \\
          ┊
-        _┊_         ✝RIP꧂ 
+        _┊_         ✝ RIP ꧂ 
         '''
     ]
     
@@ -125,6 +147,27 @@ def print_hangman(count):
 
 def play_hangman():
     print('Welcome to the Realm of Death, human.')
+    print("""
+        ⠀⠀⠀⠀⠀⠰⣄⠀⠀⠀⠈⢻⣇⢠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⢰⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠
+        ⠀⠀⠀⠀⠀⠀⠈⠳⢦⡀⠀⠀⢻⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣏⠀⠀⠀⠀⠀⠀⠀⢀⣤⣶⣿⣿
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢶⡀⡼⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣈⢿⣿⣷⣶⣦⣀⣀⣠⣶⣿⣿⣿⣿⣿
+        ⠀⠀⠀⠀⠀⢀⡀⠀⠀⠈⣄⡰⠁⠀⠀⠀⠲⣤⡀⠀⠀⠀⠀⣠⠚⠁⠀⠀⠀⠀⠀⢀⣀⠀⣼⠃⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+        ⠀⠀⠀⠀⠀⠀⠙⢀⣴⡞⠋⢸⣦⣶⣶⣤⣄⠈⢳⡀⠀⢀⡞⠁⠀⣠⣴⣶⣾⣿⣿⣿⣵⣾⡟⠀⠀⢸⡿⣿⣿⣿⠋⣁⢄⡙⣿⣿⣿⣿
+        ⠀⠀⠀⠀⠀⠀⢀⠘⠻⣄⠀⢈⣿⡟⣯⡍⠻⣷⡀⠃⠀⢿⠄⢀⣾⣿⠋⣭⣭⠙⢿⣿⣿⡿⠁⠀⢀⡞⠀⣿⡟⢻⠏⠁⢠⡇⣽⣿⣿⣿
+        ⠀⠀⠲⢄⠀⠀⠀⠀⠀⠙⢷⣸⢹⡟⢿⡿⠀⢹⣷⡀⠀⠀⢰⡿⣿⡇⠀⢿⡿⠃⢈⣿⡟⠀⠀⠀⣼⡇⠀⣿⠃⠈⡇⠈⡟⢰⣿⣿⣿⣿
+        ⠀⠀⠀⠀⠙⠲⢤⣀⠀⠀⠀⢻⢸⣿⣦⣤⣴⡿⢿⠗⠀⠀⠈⠁⢻⣿⣦⣤⣤⣤⣾⠿⠋⠁⠀⣰⣿⠁⠀⠿⢠⣞⣠⡾⠃⣼⣿⡿⠛⣿
+        ⠷⣶⣤⣀⠀⠀⠀⠈⠙⠲⢤⣘⡆⠀⠉⠉⠀⡰⣿⠆⠀⣌⠱⣤⡀⠀⠀⠀⢄⠀⠀⠀⠀⣤⣾⣿⣿⠀⠀⠀⢈⣿⣩⣴⣿⣿⠟⠀⠀⠀
+        ⡀⠀⠈⠙⠛⠶⡄⠀⠀⠀⠀⠀⢹⣤⡇⠀⠀⠠⣧⠀⠀⠘⡄⠈⢻⡇⠀⠀⠈⣟⢦⣀⣼⣿⣿⠏⠀⠀⠀⣰⣿⣿⠁⠀⠙⠁⠀⠀⠀⠀
+        ⣿⣷⣶⢤⣤⣀⠀⠀⠀⠀⠀⠀⣼⢿⡇⠀⠀⠀⠈⠁⠀⠀⠀⠀⠀⠁⠀⠀⠀⢸⣶⣿⣿⣿⡟⠀⠀⠀⢰⠇⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⣌⣳⡦⢤⣤⣤⣤⣤⣤⣤⣤⣤⣶⣶⣶⣶⣿⣾⣿⣿⣿⣧⣶⠀⠀⡞⠀⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀
+        ⣤⣤⣤⣤⣀⣀⣀⡀⠀⠀⠀⠀⠀⠈⢻⡿⢿⣿⢿⣿⣿⣿⣿⣿⣿⣿⡿⣿⠿⣿⡾⢻⣿⣿⠟⡟⠀⢸⠇⢰⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀
+        ⠟⠛⠛⠛⠛⠛⠛⠉⠁⠀⠀⠀⠀⠀⢠⣿⣾⡿⣷⣻⡿⣷⢻⣿⣿⣾⣿⣿⣾⢏⣴⡿⠟⠁⢰⠃⠀⣼⠀⣀⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀
+        ⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣀⠀⠀⠀⢿⡉⠛⠛⠛⣉⣛⣻⣿⣟⠾⠷⠿⢛⣡⣿⠏⠀⠀⠀⡼⠀⣠⠏⢸⠐⡌⡏⣹⡇⠀⠀⠀⠀⠀⠀
+        ⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠖⣻⡟⠛⠛⠉⠉⠉⠙⠛⠛⠻⠿⠿⠛⠁⠀⢀⣠⢞⣡⠞⠁⠀⠀⠑⢿⡿⠋⠀⠀⠀⠀⠀⠀⠀
+        ⣶⣶⣶⣶⣶⠶⠶⠶⠒⠂⠀⠀⠀⠘⣛⣏⢧⢀⣠⠆⠀⠀⠀⠘⢦⡀⠀⠀⣀⡤⠖⢋⡀⠊⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀
+        ⠛⢋⣉⣠⣤⣤⠤⠀⠀⠀⠀⢀⡴⢋⣡⡽⠛⢻⡏⠀⠀⠀⠀⠀⠈⢿⣛⣛⠋⠀⡠⠋⠀⠀⠀⠀⠀⠀⠀⠀⠘⠇⠀⠀⠀⠀⠀⠀⠀⠀
+        ⣿⣿⣿⠟⠋⠁⠀⠀⠀⠀⠀⣯⣴⣿⠋⠀⠀⢸⡆⠀⠀⠀⠀⠀⠀⠀⠉⡸⠁⠌⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+    """)
     time.sleep(2)   # time.sleep function adds delay to a execution
     name = input('What shall I call you? ')
     time.sleep(2)
@@ -142,7 +185,7 @@ def play_hangman():
     'investigation', 'notebook', 'Kira', 'consequences', 'suspense', 'mind', 'rule',
     'criminal', 'intelligence', 'plot', 'puzzle', 'penalty', 'game', 'mystery',
     'prosecutor', 'law', 'control', 'secret', 'detective', 'strategy', 'enigma',
-    'chess', 'lawyer', 'code', 'judgment', 'elimination', 'cat-and-mouse', 'clue',
+    'chess', 'lawyer', 'code', 'judgment', 'elimination', 'cat and mouse', 'clue',
     'misa', 'near', 'mello', 'soichiro', 'sayu', 'rem', 'teru', 'matsuda',
     'aizawa', 'ide', 'mikami', 'mogi', 'ukita', 'naomi', 'raye', 'halle', 'watari'
     ]
@@ -153,8 +196,14 @@ def play_hangman():
         play = play_again()
 
     print('Farewell, mortal. Until we meet again.')
+    print('*＊✿❀❀✿＊*')
     time.sleep(2)
-    print('visit the developers socials: ')
+
+    print('░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░')
+
+    print('visit the developers socials: https://linktr.ee/umayrnordien')
+
+    print('░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░')
     exit()
 
 if __name__ == '__main__':
