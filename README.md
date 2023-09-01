@@ -28,7 +28,7 @@ Run the script: `python code_.py`.
 
 Enjoy the game and let fate decide your victory or demise! ☠️
 
-##Still under developement - features upcoming:
+## Still under developement - features upcoming:
 - hints
 - larger array of words
 - Ryuk random comments in the terminal
