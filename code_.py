@@ -55,7 +55,7 @@ hints = {
     "chess": "The cat-and-mouse game between Light and L resembles a game of chess.",
     "lawyer": "Characters like Teru Mikami have legal backgrounds.",
     "code": "The Death Note has a code of rules.",
-        "judgment": "Characters take on the role of judge and executioner.",
+    "judgment": "Characters take on the role of judge and executioner.",
     "elimination": "Kira seeks the elimination of criminals.",
     "cat and mouse": "The central theme of the series is the cat-and-mouse chase between Light and L.",
     "clue": "Clues and hints are scattered throughout the story.",
@@ -96,9 +96,10 @@ def hangman(word):
                 word_hint = hints.get(word, "No hint available.")
                 print(f"Hint: {word_hint}")
                 hints_used += 1
+                continue
             else:
                 print("You've used all your hints...too bad.")
-            continue
+                continue
 
         # Validate user input
         while len(guess) != 1 or not guess.isalpha():
